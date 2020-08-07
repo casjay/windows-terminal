@@ -1,16 +1,14 @@
-// To view the default settings, hold "alt" while clicking on the "Settings" button.
-// For documentation on these settings, see: https://aka.ms/terminal-documentation
-{
+// https://github.com/microsoft/terminal
+
+// Add this to defaults
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "copyOnSelect": false,
   "copyFormatting": false,
   "fontFace": "Cascadia Code PL",
   "colorScheme": "Dracula",
 
-  // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
-  "profiles": {
-    "defaults": {},
-    "list": [
+// To learn more about profiles, visit https://aka.ms/terminal-profile-settings
+// Add this to profiles
       {
         "guid": "{00000000-0000-0000-ba54-000000000002}",
         "acrylicOpacity": 0.75,
@@ -27,12 +25,8 @@
         "startingDirectory": "%USERPROFILE%",
         "useAcrylic": true
       },
-    ]
-  },
 
-  // Add custom color schemes to this array.
-  // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
-  "schemes": [
+// Add this to schemes
     {
       // Dracula
       "name": "Dracula",
@@ -55,27 +49,11 @@
       "brightWhite": "#F8F8F2",
       "brightYellow": "#FFFFA5"
     }
-  ],
 
-  // To learn more about keybindings, visit https://aka.ms/terminal-keybindings
-  "keybindings": [
-    // To learn more about selection, visit https://aka.ms/terminal-selection
+// Add this to keybindings
     { "command": { "action": "copy", "singleLine": false }, "keys": "ctrl+c" },
     { "command": "paste", "keys": "ctrl+v" },
-    // Press Ctrl+Shift+F to open the search box
     { "command": "find", "keys": "ctrl+shift+f" },
     { "command": "newTab", "keys": "ctrl+t" },
     { "command": "find", "keys": "ctrl+f" },
-
-    // Press Alt+Shift+D to open a new pane.
-    // To learn more about panes, visit https://aka.ms/terminal-panes
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "auto",
-        "splitMode": "duplicate"
-      },
-      "keys": "alt+shift+d"
-    }
-  ]
-}
+    { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
